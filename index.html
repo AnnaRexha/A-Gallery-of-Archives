@@ -2,29 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Memory Gallery</title>
+  <title>Virtual Archive Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="memory-map">
-    <div class="memory" style="top: 15%; left: 25%;">
-      <img src="images/photo1.jpg" alt="Memory 1">
-      <div class="story">“A letter never sent.”</div>
-    </div>
+  <div class="gallery-container">
+    <section class="gallery-room">
 
-    <div class="memory" style="top: 45%; left: 60%;">
-      <img src="images/photo2.jpg" alt="Memory 2">
-      <div class="story">“The last sunset before goodbye.”</div>
-    </div>
+      <div class="gallery-item">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <div class="caption">
+          <h3>“A Letter Never Sent”</h3>
+          <p>A fragile moment preserved in silence — a letter that never found its reader.</p>
+        </div>
+      </div>
 
-    <div class="memory" style="top: 70%; left: 35%;">
-      <img src="images/photo3.jpg" alt="Memory 3">
-      <div class="story">“A suitcase full of letters.”</div>
-    </div>
+      <div class="gallery-item">
+        <img src="images/photo2.jpg" alt="Photo 2">
+        <div class="caption">
+          <h3>“The Last Sunset”</h3>
+          <p>The final light before goodbye, frozen in time like a farewell glance.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/photo3.jpg" alt="Photo 3">
+        <div class="caption">
+          <h3>“A Suitcase Full of Letters”</h3>
+          <p>Migration in ink and paper — a personal archive of longing and distance.</p>
+        </div>
+      </div>
+
+    </section>
   </div>
-
-  <script src="https://unpkg.com/panzoom"></script>
-  <script src="script.js"></script>
 </body>
 </html>
