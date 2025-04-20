@@ -1,61 +1,72 @@
 body {
   margin: 0;
-  background: #fefefe;
+  padding: 0;
+  background-color: #fdfdfd;
   font-family: 'Georgia', serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-#memory-map {
+.gallery-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #fffefb, #f4f2ef);
+  scroll-behavior: smooth;
+  background: #efefef;
 }
 
-.memory {
-  position: absolute;
-  width: 200px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+.gallery-room {
+  display: flex;
+  padding: 4rem 2rem;
+  height: 100vh;
+  align-items: center;
+  gap: 6rem;
+  min-width: max-content;
 }
 
-.memory img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, filter 0.3s ease;
+.gallery-item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.memory:hover img {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+.gallery-item img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.story {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
+.caption {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caption h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.caption p {
+  font-size: 0.95rem;
   color: #444;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  font-style: italic;
+  line-height: 1.4;
 }
 
-.memory:hover .story {
-  opacity: 1;
+/* Optional scrollbar hiding */
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .memory {
-    width: 140px;
-  }
-
-  .story {
-    font-size: 14px;
-  }
+.gallery-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
 }
