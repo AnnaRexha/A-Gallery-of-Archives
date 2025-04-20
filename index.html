@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Map</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Memory Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div id="memory-map">
-      <div class="memory-point" data-memory="Memory 1 - A journey through time" style="top: 10%; left: 30%;">
-    <img src="images/photo1.jpg" alt="Memory 1">
-</div>
-        
-<div class="memory-point" data-memory="Memory 2 - A journey through time" style="top: 10%; left: 30%;">
-    <img src="photo2.jpg" alt="Memory 1">
-</div>
-        
-<div class="memory-point" data-memory="Memory 1 - A journey through time" style="top: 10%; left: 30%;">
-    <img src="images/photo3.jpg" alt="Memory 1">
-</div>
-        
-<div class="memory-point" data-memory="Memory 1 - A journey through time" style="top: 10%; left: 30%;">
-    <img src="images/photo4.jpg" alt="Memory 1">
-</div>
-        
-<div class="memory-point" data-memory="Memory 1 - A journey through time" style="top: 10%; left: 30%;">
-    <img src="images/photo5.jpg" alt="Memory 1">
-</div>
-
-        
-
-        <div id="story" class="story-box"></div> <!-- Story box for hover -->
+  <div id="memory-map">
+    <div class="memory" style="top: 15%; left: 25%;">
+      <img src="images/photo1.jpg" alt="Memory 1">
+      <div class="story">“A letter never sent.”</div>
     </div>
 
-    <script src="https://unpkg.com/panzoom"></script>
-    <script src="script.js"></script>
+    <div class="memory" style="top: 45%; left: 60%;">
+      <img src="images/photo2.jpg" alt="Memory 2">
+      <div class="story">“The last sunset before goodbye.”</div>
+    </div>
+
+    <div class="memory" style="top: 70%; left: 35%;">
+      <img src="images/photo3.jpg" alt="Memory 3">
+      <div class="story">“A suitcase full of letters.”</div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/panzoom"></script>
+  <script src="script.js"></script>
 </body>
 </html>
